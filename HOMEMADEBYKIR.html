@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love Atthar Lamta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #FFDDC1;
+            color: #4A4A4A;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FFF3E1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #FF6B6B;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #FF6B6B;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #FF3B3B;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How Much Do I Love Atthar Lamta?</h1>
+        <p>Let me count the ways! Click on any button below to find out more ❤️</p>
+        
+        <div class="button-container">
+            <button class="button" onclick="showMessage('I love Atthar as much as the stars love the night! 🌌')">#1</button>
+            <button class="button" onclick="showMessage('More than cookies love chocolate chips 🍪')">#2</button>
+            <button class="button" onclick="showMessage('More than pizza loves cheese! 🍕')">#3</button>
+            <button class="button" onclick="showMessage('To the moon and back… and beyond! 🚀')">#4</button>
+            <button class="button" onclick="showMessage('More than all the waves in the ocean 🌊')">#5</button>
+        </div>
+        
+        <p id="loveMessage" style="margin-top: 20px; font-style: italic;"></p>
+    </div>
+
+    <script>
+        function showMessage(message) {
+            document.getElementById('loveMessage').textContent = message;
+        }
+    </script>
+</body>
+</html>
